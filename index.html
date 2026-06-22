@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>海外内容趋势雷达</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --paper: #fffdfa;
+      --ink: #1f1d1a;
+      --muted: #625c55;
+      --line: #ddd4c9;
+      --accent: #8f3149;
+      --blue: #315f8f;
+      --green: #2f6f60;
+      --soft: #f1e9df;
+      --shadow: 0 16px 40px rgba(31, 29, 26, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 44px 24px 72px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: end;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .04em;
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(30px, 5vw, 44px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p { margin: 8px 0; }
+
+    .subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .status {
+      min-width: 220px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .status strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--green);
+    }
+
+    .report {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .report-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      color: var(--accent);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0 18px;
+    }
+
+    .point {
+      border-left: 4px solid var(--blue);
+      background: #f4f7f8;
+      padding: 10px 12px;
+      min-height: 64px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+      font-weight: 700;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbf7f1;
+      padding: 16px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 780px) {
+      main { padding: 28px 16px 56px; }
+      header { grid-template-columns: 1fr; }
+      .status { min-width: 0; }
+      .report-head { display: block; }
+      .date { margin-top: 8px; }
+      .points { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <div class="kicker">OVERSEAS CONTENT RADAR</div>
+      <h1>海外内容趋势雷达</h1>
+      <p class="subtitle">按周归档海外读者、作者和观众的热门讨论。重点不是搬榜单，而是看近一周大家在聊什么、口味有没有变化、哪些内容方向值得编辑重新留意。</p>
+    </div>
+    <aside class="status">
+      <strong>当前最新</strong>
+      <div>2026-06-22 周报已更新</div>
+    </aside>
+  </header>
+
+  <section class="report">
+    <div class="report-head">
+      <div>
+        <h2>海外内容趋势雷达</h2>
+        <div class="meta">Reddit / Amazon / YouTube / IMDb；女频、男频、作者平台、影视/IP 信号。</div>
+      </div>
+      <span class="date">2026-06-22</span>
+    </div>
+
+    <p>本期样本包括 66 个 Reddit 重点帖子与评论层，并补充 Amazon、YouTube、IMDb 信号。报告重点放在具体讨论现场：Romance 对文笔和边界感的要求、Romantasy 模板疲劳、LitRPG/Progression Fantasy 对可信成长的需求、RoyalRoad 作者的平台焦虑、AI 披露，以及 Dungeon Crawler Carl 与 Icebreaker 的改编信号。</p>
+
+    <div class="points">
+      <div class="point">女频：读者不是不要刺激，而是更在意边界、亲密感、文笔和人物逻辑。</div>
+      <div class="point">Romantasy：Fae、fated mates、强男主仍有效，但模板感更容易被吐槽。</div>
+      <div class="point">男频：普通能力练到极致、average Joe 主角、长线兑现能力，是本周反复出现的讨论点。</div>
+      <div class="point">作者侧：RoyalRoad 曝光、off-meta 困境、AI 披露，说明签约时也要看作者的平台经营意识。</div>
+    </div>
+
+    <div class="links">
+      <a class="button primary" href="reports/2026-06-22.html">打开网页报告</a>
+      <a class="button" href="reports/2026-06-22.pdf">下载 PDF</a>
+    </div>
+  </section>
+
+  <section class="note">
+    后续每周报告会继续追加到这个页面，按日期从新到旧排列。这个文件目前是本地网页；如果要让所有同事都能打开，需要把整个 <strong>trend_report_site</strong> 文件夹放到公司服务器、GitHub Pages、阿里云 OSS、腾讯云 COS、飞书/钉钉可公开文件空间等任一可访问位置。
+  </section>
+
+  <footer>
+    本页面只是报告入口。具体判断、帖子样本和签约启发，请进入对应日期的网页报告查看。
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>海外读者趋势研判 2026-06-22</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --paper: #fffdfa;
+      --ink: #221f1c;
+      --muted: #625c56;
+      --line: #ddd5ca;
+      --accent: #933650;
+      --blue: #315f8f;
+      --green: #2f6f60;
+      --gold: #8a5f24;
+      --soft: #f1e9df;
+      --high: #e1f1ea;
+      --mid: #f8eed8;
+      --low: #ece8e2;
+      --risk: #f7e2e7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    main { max-width: 1160px; margin: 0 auto; padding: 42px 28px 76px; }
+    header { border-bottom: 2px solid var(--line); padding-bottom: 26px; margin-bottom: 26px; }
+    .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+    h1 { margin: 8px 0 10px; font-size: 34px; line-height: 1.18; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; letter-spacing: 0; }
+    h3 { margin: 18px 0 8px; font-size: 17px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0; padding-left: 21px; }
+    li { margin: 5px 0; }
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 22px 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,.035);
+    }
+    .subtitle { color: var(--muted); max-width: 960px; font-size: 16px; }
+    .meta, .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .pill, .tag {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      min-height: 28px;
+      padding: 4px 10px;
+      font-size: 13px;
+      color: #3d3833;
+      background: var(--soft);
+    }
+    .tag.high { background: var(--high); color: var(--green); border-color: #bdd9cf; }
+    .tag.mid { background: var(--mid); color: var(--gold); border-color: #e6d2a5; }
+    .tag.low { background: var(--low); color: #5b554f; }
+    .tag.risk { background: var(--risk); color: var(--accent); border-color: #e5b6c4; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .tri { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      background: #fbf7f1;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 15px;
+    }
+    .card strong { display: block; margin-bottom: 5px; }
+    .signal { border-left: 5px solid var(--accent); }
+    .voice { border-left: 5px solid var(--blue); }
+    .sample { border-left: 5px solid var(--green); }
+    .quote {
+      border-left: 4px solid var(--blue);
+      background: #edf4f8;
+      padding: 10px 14px;
+      margin: 12px 0;
+      color: #2d3a42;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px 7px; text-align: left; vertical-align: top; }
+    th { background: #f1e8dd; color: #3d3731; }
+    .source { color: var(--muted); font-size: 13px; }
+    footer { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 14px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 860px) {
+      main { padding: 28px 16px 56px; }
+      h1 { font-size: 28px; }
+      section { padding: 18px; }
+      .grid, .tri { grid-template-columns: 1fr; }
+      table { font-size: 13px; }
+    }
+    @media print {
+      body { background: white; }
+      main { max-width: none; padding: 18mm 14mm; }
+      section { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">海外读者与作者讨论周报</div>
+    <h1>海外内容趋势雷达</h1>
+    <p class="subtitle">这版基于新抓取的 66 个 Reddit 重点帖和评论层，补充 Amazon、YouTube、IMDb 信号。重点看最近读者和作者在热烈讨论什么，口味有没有变化，以及这些变化能给签约策略什么启发。</p>
+    <div class="meta">
+      <span class="pill">日期：2026-06-22</span>
+      <span class="pill">Reddit 66 个帖子详情</span>
+      <span class="pill">Amazon / YouTube / IMDb 补充</span>
+      <span class="pill">女频 + 男频 + 作者平台 + IP</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>本周先看</h2>
+    <div class="grid">
+      <div class="card signal"><strong>1. 女频读者的讨论不是“不要刺激”，而是“刺激要换一种写法”。</strong>高辣、占有欲、敌对拉扯、Dark Romance 都还有热度，但读者越来越会挑：张力是来自人物互动，还是靠伤害、羞辱、年轻无权女主硬撑。</div>
+      <div class="card signal"><strong>2. Romantasy 仍是入口，但读者开始讨厌模板感。</strong>本周高互动吐槽集中在 Fae 同质化、fated mates 偷懒、巨大男主配娇小女主、18-21 岁女主突然神级强大。</div>
+      <div class="card signal"><strong>3. 男频读者对“主角怎么强起来”更敏感。</strong>普通能力练到极致、average Joe 主角、长连载后期疲劳、LitRPG 感情线工具化，都是在要求更可信的成长和长期兑现。</div>
+      <div class="card signal"><strong>4. 作者侧的焦虑也值得编辑看。</strong>RoyalRoad 作者在谈 off-meta 难出头、平台曝光、推广能力；AI 披露也从读者反感变成社区规则问题。</div>
+      <div class="card signal"><strong>5. IP 热度不等于改编安全。</strong>Dungeon Crawler Carl 和 Icebreaker 都有改编讨论，但粉丝第一反应不是只庆祝，而是问预算、节奏、核心梗能不能保住。</div>
+      <div class="card signal"><strong>6. 签约策略可能要从“追标签”转成“看兑现能力”。</strong>女频看关系和情绪怎么兑现；男频看规则和成长怎么兑现；作者看平台经营和长期规划怎么兑现。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>女频热门讨论现场</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>讨论</th>
+          <th>热度</th>
+          <th>读者在聊什么</th>
+          <th>给签约的启发</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>“I am begging for NOTEWORTHY PROSE”</td>
+          <td>r/RomanceBooks：443 赞，272 评论</td>
+          <td>读者在要有记忆点的文笔。高赞评论推荐 Kate Clayborn，夸的是人物背景、双视角、生活细节和关系变化；也有人说 popular contemporary romance 现在“同一种毛病太多”。</td>
+          <td>Romance 签约不能只看 trope 是否清晰，文笔、人物生活感、关系推进也应该进入筛选标准。</td>
+        </tr>
+        <tr>
+          <td>“filthiest, smuttiest... but zero darkness”</td>
+          <td>r/RomanceBooks：392 赞，130 评论</td>
+          <td>楼主要 filthy、smutty、over-the-top、possessive，但不要 darkness。评论在推荐时会专门讨论 content warning，说明读者不是不要边界，而是想要更明确的边界。</td>
+          <td>“高辣低暗度”可以作为近期可试方向。签稿时看性张力是否来自互动和迷恋，而不是来自伤害。</td>
+        </tr>
+        <tr>
+          <td>“Fantasy romance icks?”</td>
+          <td>r/fantasyromance：376 评论</td>
+          <td>最高赞吐槽巨大男主配娇小女主，女主又 tiny 又 fragile 但设定上强到离谱；另一个高赞点是男主用“我对你坏是因为爱你”合理化伤害。</td>
+          <td>Romantasy 读者已经能识别模板。Fae、fated mates、强男主仍可用，但不能替代人物逻辑。</td>
+        </tr>
+        <tr>
+          <td>“I think it's time for a fantasy romance break”</td>
+          <td>r/fantasyromance：293 赞，235 评论</td>
+          <td>评论集中骂 Mary Sue：18-21 岁、处女、没打过架，后期突然神级强大。有人明确想看 29/30 岁、有经验、有生活的女主。</td>
+          <td>更成熟女主、有代价的能力成长、fantasy with romantic subplot 可以多看。不是退出 Romantasy，而是提高筛选标准。</td>
+        </tr>
+        <tr>
+          <td>“MM romances are missing tenderness”</td>
+          <td>r/MM_RomanceBooks：321 赞，202 评论</td>
+          <td>读者说很多作者会写 sexual tension，却忘了 intimacy。Cat Sebastian、KJ Charles、We Could Be So Good 被反复提，因为互相照料、慢热、日常 affection 写得好。</td>
+          <td>MM Romance 可以多看 tenderness、emotional intimacy、成年人关系。只靠欲望推进不够。</td>
+        </tr>
+        <tr>
+          <td>“Why are all Mafia FMCs 18?”</td>
+          <td>r/RomanceBooks：380 赞，153 评论</td>
+          <td>读者反感的不是年龄数字本身，而是 18 岁女主常和“女性作为交易筹码”“无权”“被操控”绑定。评论里有人指出这是 mafia romance 底层权力结构的问题。</td>
+          <td>Mafia / arranged marriage 仍可签，但要考虑更成熟女主、权力更对等、或明确反操控的叙事。</td>
+        </tr>
+        <tr>
+          <td>“Books not meant for the TikTok algorithm”</td>
+          <td>r/DarkRomance：148 赞，84 评论</td>
+          <td>Dark Romance 读者吐槽为短视频传播写出的 cringe 台词、夸张昵称、只会“告诉你他很坏”而不是写出来。</td>
+          <td>Dark Romance 的营销短句不能反向污染正文。签稿时要看作者是否只会写标签化台词。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>男频与网文讨论现场</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>讨论</th>
+          <th>热度</th>
+          <th>读者/作者在聊什么</th>
+          <th>给签约的启发</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>“普通能力练到极致”</td>
+          <td>r/ProgressionFantasy：329 赞，184 评论</td>
+          <td>楼主明确不要 void、gravity、dragon bloodline，只要普通能力练到顶级。评论给 Goblin Slayer、Beware of Chicken、普通火法、弓手、assassin 等例子。</td>
+          <td>可以多看“基础职业/普通能力专精”路线。重点不是能力普通，而是训练、理解、组合和代价写得深。</td>
+        </tr>
+        <tr>
+          <td>“MC is just some guy?”</td>
+          <td>r/litrpg：70 赞，169 评论</td>
+          <td>楼主喜欢大热系列，但想找 average Joe，不想每个主角都通向 god in the making。Street Cultivation 被推荐，理由是 believable and appealing。</td>
+          <td>普通人起步有需求。签这类稿要看成长可信度，而不是看主角开局是不是够炸。</td>
+        </tr>
+        <tr>
+          <td>“Losing Interest in My Favorite Progression Fantasy Series”</td>
+          <td>r/ProgressionFantasy：102 赞，148 评论</td>
+          <td>高赞评论说，长连载常见问题是作者追上原规划后，章节边界、卷边界、阶段目标越来越模糊。有人说这是“想讲故事”变成“应该继续讲故事”。</td>
+          <td>长篇男频签约不能只看开局和设定。中后期大纲、阶段结局、反派梯队、战力上限要前置看。</td>
+        </tr>
+        <tr>
+          <td>“Small sized rant about romance in litrpgs”</td>
+          <td>r/litrpg：99 赞，169 评论</td>
+          <td>楼主吐槽感情线经常变成后宫或 sociopath 主角。评论里 Cradle 被争论：有人觉得关系自然，有人觉得几乎不能算 romance。</td>
+          <td>男频感情线不是不能写，但不能像奖励机制。伴侣要有独立目标，关系要改变人物选择。</td>
+        </tr>
+        <tr>
+          <td>“Hard magic system ruined fantasy?”</td>
+          <td>r/Fantasy：403 赞，306 评论</td>
+          <td>有人觉得硬魔法解释过多破坏 fantasy 感，也有人说这只是流行风格循环。评论里出现“BookTok problem”的说法。</td>
+          <td>规则感要服务奇观、人物和情绪，不要把解释本身当成爽点。男频/奇幻都要小心“设定说明书化”。</td>
+        </tr>
+        <tr>
+          <td>RoyalRoad off-meta 焦虑</td>
+          <td>r/royalroad：202 赞，192 评论</td>
+          <td>作者对平台曝光和回报失望。评论区承认 off-meta 难出头，也指出写作和推广是两套能力，平台会奖励更容易被识别和传播的作品。</td>
+          <td>签海外网文作者时，不只看文本，也看平台经营意识：封面、简介、标签、更新节奏、首周曝光都影响结果。</td>
+        </tr>
+        <tr>
+          <td>AI Promo 新规</td>
+          <td>r/litrpg：184 赞，172 评论；RoyalRoad 也有 AI 风格讨论</td>
+          <td>社区要求 generative AI 自报。评论提醒作者可能被 AI 封面服务商骗，也有人建议标注艺术家，避免误伤。</td>
+          <td>AI 披露要进入签约和出版流程：封面、广告图、文案、正文辅助都要有记录。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>影视/IP 与跨媒介信号</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>样本</th>
+          <th>本周讨论</th>
+          <th>评论区重点</th>
+          <th>给编辑的启发</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dungeon Crawler Carl</td>
+          <td>r/Fantasy：1841 赞，440 评论；r/litrpg 也有多帖讨论 Peacock 改编。</td>
+          <td>粉丝兴奋，但最高赞担心 Peacock 预算不够。评论反复提 CGI、动画是否更适合、Princess Donut、Jeff Hays、new achievement。</td>
+          <td>高概念男频有 IP 潜力，但改编可行性不能只看粉丝量。核心体验能不能迁移更关键。</td>
+        </tr>
+        <tr>
+          <td>Icebreaker</td>
+          <td>r/RomanceBooks：440 赞，218 评论；Netflix 改编。</td>
+          <td>读者把 hockey romance 调侃成 new vampire lore，也担心原书是否有足够剧情撑长剧。</td>
+          <td>Sports Romance 有平台化机会，但签这类作品时要看群像、比赛、关系线能不能撑剧集长度。</td>
+        </tr>
+        <tr>
+          <td>Project Hail Mary</td>
+          <td>r/scifi：851 赞，343 评论。</td>
+          <td>读者夸 hard-science problem solving、节奏和 audiobook。评论里多人提到听书体验好，说明声音媒介能放大陪伴感。</td>
+          <td>科幻不只看概念。问题解决过程、节奏、情感搭档、有声化潜力都值得纳入判断。</td>
+        </tr>
+        <tr>
+          <td>Disclosure Day</td>
+          <td>r/scifi：707 赞，684 评论。</td>
+          <td>高互动来自强烈负评。评论认为演员表现可以，但写作、剧情漏洞、自以为深刻的问题很明显。</td>
+          <td>大议题不能替代剧本基本功。签科幻/悬疑时要特别看 plot logic 和人物动机。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>读者喜好动向</h2>
+    <div class="grid">
+      <div class="card voice"><strong>女频：从“更刺激”转向“刺激但有边界”。</strong>读者还要 high spice、possessive MMC、enemies-to-lovers，但对 noncon、mafia 年轻女主、cringe dark dialogue 更敏感。</div>
+      <div class="card voice"><strong>Romance：文笔和亲密细节被重新提上来。</strong>prose、tenderness、slow burn、日常 affection 不是小众要求，而是在多个 Romance/MM 讨论里互相呼应。</div>
+      <div class="card voice"><strong>Romantasy：读者开始从标签消费转向质量筛选。</strong>Fae、fated mates、魔法王权仍有市场，但没有代价、没有人物逻辑，会更容易被吐槽。</div>
+      <div class="card voice"><strong>男频：强主角仍然有效，但读者要看到强的过程。</strong>普通能力、average Joe、阶段目标、规则自洽，都在指向更可信的成长爽感。</div>
+      <div class="card voice"><strong>作者侧：平台经营能力变重要。</strong>RoyalRoad 讨论说明，海外网文作者不仅要会写，还要理解封面、简介、标签、更新节奏和冷启动。</div>
+      <div class="card voice"><strong>信任感变成跨品类问题。</strong>AI 披露、IP 改编、长连载后期规划，本质上都在影响读者是否继续信任作者和作品。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>对签约策略的启发</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>策略变化</th>
+          <th>可以多看</th>
+          <th>需要提高门槛</th>
+          <th>一句话判断</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>女频不要只按 trope 签</td>
+          <td>高辣低暗度、成熟女主、慢热、好文笔、关系细节扎实的 Romance。</td>
+          <td>只靠“mafia / dark / fated / bully”标签，没有人物变化和边界处理的稿。</td>
+          <td>读者不是不要 trope，是不要 trope 替代故事。</td>
+        </tr>
+        <tr>
+          <td>Romantasy 签约标准要变细</td>
+          <td>世界观有代价、能力成长可信、非人设定有异质感的稿。</td>
+          <td>Fae 同质化、fated mates 偷懒、女主无成本神级强大。</td>
+          <td>熟悉元素仍能卖，但必须给读者新的成立理由。</td>
+        </tr>
+        <tr>
+          <td>男频要看长期结构</td>
+          <td>普通能力专精、average Joe 成长、规则清楚、阶段目标明确的 LitRPG / Progression Fantasy。</td>
+          <td>开局很炸但没有中后期规划，主角过强后只能靠降智制造冲突。</td>
+          <td>签男频不只签开局爽点，也是在签长期兑现能力。</td>
+        </tr>
+        <tr>
+          <td>作者经营能力要纳入判断</td>
+          <td>理解平台、能配合简介/封面/标签/更新节奏、有读者沟通意识的作者。</td>
+          <td>只会写、不理解平台；或依赖 AI 素材但没有披露意识。</td>
+          <td>海外网文签约不是只买稿，也是在买作者长期经营能力。</td>
+        </tr>
+        <tr>
+          <td>IP 潜力要看核心体验能否迁移</td>
+          <td>有强钩子、强粉丝梗、声音/视觉记忆点、情绪承诺清楚的作品。</td>
+          <td>视觉成本过高、核心体验只适合文字、改编容易丢掉粉丝最爱的点。</td>
+          <td>粉丝热不等于改编稳，先看“拍出来还剩什么”。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>样本池</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>样本</th>
+          <th>为什么放进来</th>
+          <th>编辑可看什么</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Kate Clayborn / Cat Sebastian / KJ Charles</td><td>在 prose、tenderness、成熟关系讨论中反复被提。</td><td>人物细节、慢热关系、日常亲密感。</td></tr>
+        <tr><td>Streams and Schemes / Bad Billionaire Bosses</td><td>被推荐给“高辣但 zero darkness”的读者。</td><td>如何写强欲望但不转向创伤消耗。</td></tr>
+        <tr><td>Beware of Chicken / Street Cultivation</td><td>男频读者用来解释普通能力、普通人起步的吸引力。</td><td>普通能力如何写出成长爽感。</td></tr>
+        <tr><td>Cradle</td><td>既出现在限免拉新，也出现在成长弧和感情线讨论里。</td><td>长系列入口、阶段升级、关系克制。</td></tr>
+        <tr><td>Dungeon Crawler Carl</td><td>本周最明显的男频 IP 改编信号。</td><td>粉丝梗、声音记忆点、改编风险。</td></tr>
+        <tr><td>Icebreaker</td><td>Sports Romance 平台化样本。</td><td>运动题材、年轻读者、剧集支撑力。</td></tr>
+        <tr><td>Project Hail Mary</td><td>科幻读者持续正向讨论，且有声化反馈强。</td><td>问题解决节奏、搭档关系、声音媒介潜力。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>来源：Reddit 近一周高互动帖与评论层，补充 Amazon 搜索候选、YouTube 近一周视频/评论、IMDb Trending。本报告用于编辑签约策略参考，不代表销量榜或全网绝对热度。</p>
+  </footer>
+</main>
+</body>
+</html>
