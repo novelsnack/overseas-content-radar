@@ -17,9 +17,7 @@
       --soft: #f1e9df;
       --shadow: 0 16px 40px rgba(31, 29, 26, .08);
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       background: var(--bg);
@@ -27,13 +25,7 @@
       font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
       line-height: 1.7;
     }
-
-    main {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 44px 24px 72px;
-    }
-
+    main { max-width: 1080px; margin: 0 auto; padding: 44px 24px 72px; }
     header {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
@@ -43,36 +35,11 @@
       padding-bottom: 24px;
       margin-bottom: 28px;
     }
-
-    .kicker {
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: .04em;
-    }
-
-    h1 {
-      margin: 8px 0 10px;
-      font-size: clamp(30px, 5vw, 44px);
-      line-height: 1.15;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }
-
+    .kicker { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: .04em; }
+    h1 { margin: 8px 0 10px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: 0; }
+    h2 { margin: 0 0 10px; font-size: 24px; line-height: 1.25; letter-spacing: 0; }
     p { margin: 8px 0; }
-
-    .subtitle {
-      max-width: 760px;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
+    .subtitle { max-width: 760px; color: var(--muted); font-size: 16px; }
     .status {
       min-width: 220px;
       border: 1px solid var(--line);
@@ -81,13 +48,7 @@
       padding: 14px 16px;
       box-shadow: var(--shadow);
     }
-
-    .status strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--green);
-    }
-
+    .status strong { display: block; margin-bottom: 4px; color: var(--green); }
     .report {
       background: var(--paper);
       border: 1px solid var(--line);
@@ -96,7 +57,6 @@
       margin: 18px 0;
       box-shadow: var(--shadow);
     }
-
     .report-head {
       display: flex;
       justify-content: space-between;
@@ -104,7 +64,6 @@
       align-items: flex-start;
       margin-bottom: 10px;
     }
-
     .date {
       display: inline-flex;
       align-items: center;
@@ -117,40 +76,16 @@
       font-weight: 700;
       white-space: nowrap;
     }
-
-    .meta {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
     .points {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 10px;
       margin: 16px 0 18px;
     }
-
-    .point {
-      border-left: 4px solid var(--blue);
-      background: #f4f7f8;
-      padding: 10px 12px;
-      min-height: 64px;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    a {
-      color: var(--accent);
-      text-underline-offset: 3px;
-      font-weight: 700;
-    }
-
+    .point { border-left: 4px solid var(--blue); background: #f4f7f8; padding: 10px 12px; min-height: 64px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    a { color: var(--accent); text-underline-offset: 3px; font-weight: 700; }
     .button {
       display: inline-flex;
       align-items: center;
@@ -162,13 +97,7 @@
       background: var(--soft);
       text-decoration: none;
     }
-
-    .button.primary {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: white;
-    }
-
+    .button.primary { background: var(--accent); border-color: var(--accent); color: white; }
     .note {
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -178,13 +107,7 @@
       color: var(--muted);
       font-size: 14px;
     }
-
-    footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
     @media (max-width: 780px) {
       main { padding: 28px 16px 56px; }
       header { grid-template-columns: 1fr; }
@@ -205,7 +128,7 @@
     </div>
     <aside class="status">
       <strong>当前最新</strong>
-      <div>2026-06-22 周报已更新</div>
+      <div>2026-06-29 周报已更新</div>
     </aside>
   </header>
 
@@ -215,18 +138,30 @@
         <h2>海外内容趋势雷达</h2>
         <div class="meta">Reddit / Amazon / YouTube / IMDb；女频、男频、作者平台、影视/IP 信号。</div>
       </div>
+      <span class="date">2026-06-29</span>
+    </div>
+    <p>本期重点：soft dom 与照顾型占有上升、romance 读者进入重读与避雷心态、Romantasy 同时要求高脑力和高质量 spice、LitRPG 读者追问技能/数值/OP 是否认真兑现、RoyalRoad 作者侧出现 AI cover、0.5 rating 和跨平台适应讨论。</p>
+    <div class="points">
+      <div class="point">女频：读者不是不要刺激，而是要更精准的刺激：可控支配、被明确选择、好文笔和关系名场面。</div>
+      <div class="point">Romantasy：模板仍能卖，但高互动讨论在要求政治线、慢热、幽默和不重复的亲密戏。</div>
+      <div class="point">男频：独特技能、数值系统、OP 主角继续有效，但读者更在意规则自洽和长期兑现。</div>
+      <div class="point">作者侧：封面、评分、AI 披露、RoyalRoad 文化适应，已经影响作品能不能被发现和信任。</div>
+    </div>
+    <div class="links">
+      <a class="button primary" href="reports/2026-06-29.html">打开网页报告</a>
+      <a class="button" href="reports/2026-06-29.pdf">下载 PDF</a>
+    </div>
+  </section>
+
+  <section class="report">
+    <div class="report-head">
+      <div>
+        <h2>海外内容趋势雷达</h2>
+        <div class="meta">Reddit / Amazon / YouTube / IMDb；女频、男频、作者平台、影视/IP 信号。</div>
+      </div>
       <span class="date">2026-06-22</span>
     </div>
-
-    <p>本期样本包括 66 个 Reddit 重点帖子与评论层，并补充 Amazon、YouTube、IMDb 信号。报告重点放在具体讨论现场：Romance 对文笔和边界感的要求、Romantasy 模板疲劳、LitRPG/Progression Fantasy 对可信成长的需求、RoyalRoad 作者的平台焦虑、AI 披露，以及 Dungeon Crawler Carl 与 Icebreaker 的改编信号。</p>
-
-    <div class="points">
-      <div class="point">女频：读者不是不要刺激，而是更在意边界、亲密感、文笔和人物逻辑。</div>
-      <div class="point">Romantasy：Fae、fated mates、强男主仍有效，但模板感更容易被吐槽。</div>
-      <div class="point">男频：普通能力练到极致、average Joe 主角、长线兑现能力，是本周反复出现的讨论点。</div>
-      <div class="point">作者侧：RoyalRoad 曝光、off-meta 困境、AI 披露，说明签约时也要看作者的平台经营意识。</div>
-    </div>
-
+    <p>本期重点：Romance 对文笔和边界感的要求、Romantasy 模板疲劳、LitRPG/Progression Fantasy 对可信成长的需求、RoyalRoad 作者的平台焦虑、AI 披露，以及 Dungeon Crawler Carl 与 Icebreaker 的改编信号。</p>
     <div class="links">
       <a class="button primary" href="reports/2026-06-22.html">打开网页报告</a>
       <a class="button" href="reports/2026-06-22.pdf">下载 PDF</a>
